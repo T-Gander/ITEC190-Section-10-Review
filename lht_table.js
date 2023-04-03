@@ -29,5 +29,3 @@ for (var i = 0; i < eventDates.length; i++){
 tableHTML += "</table>";
 
 document.getElementById("eventList").innerHTML = tableHTML;
-
-alert(endDate);
