@@ -16,7 +16,7 @@ var tableHTML = "<table id='eventTable'> <caption>Upcoming Events</caption> <tr>
 var endDate = new Date(thisDay);
 endDate.setDate(thisDay.getDate()+14);
 
-for (var i = 0; i < eventDates.length-1; i++){
+for (var i = 0; i < eventDates.length; i++){
 
    var eventDate = new Date(eventDates[i]);
    var eventDay = eventDate.toDateString();
@@ -28,4 +28,6 @@ for (var i = 0; i < eventDates.length-1; i++){
 }
 tableHTML += "</table>";
 
+document.getElementById("eventList").innerHTML = tableHTML;
 
+alert(endDate);
